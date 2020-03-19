@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="CQ Dialog Editor"
+    sling:resourceSuperType="granite/ui/components/shell/page">
+    <title
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="/apps/cq-dialog-editor/components/title"/>
+    <components/>
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/apps/cq-dialog-editor/components/body"/>
+        </items>
+    </content>
+    <head jcr:primaryType="nt:unstructured">
+        <clientlibs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+            categories="[cq-dialog-editor.main]"/>
+    </head>
+    <actions jcr:primaryType="nt:unstructured">
+        <primary jcr:primaryType="nt:unstructured">
+            <create-dialog-btn
+                granite:id="create-dialog-btn"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/granite/ui/components/coral/foundation/button"
+                icon="add"
+                iconSize="S"
+                text="Create"
+                title="Create "
+                variant="actionbar&#xa;"/>
+            <save-btn
+                granite:id="suraj-save-btn"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/granite/ui/components/coral/foundation/button"
+                icon="save"
+                text="Save"
+                title="Save"
+                variant="primary"/>
+        </primary>
+        <secondary jcr:primaryType="nt:unstructured"/>
+    </actions>
+    <clientlib/>
+</jcr:root>
